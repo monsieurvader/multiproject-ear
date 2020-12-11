@@ -1,0 +1,12 @@
+import org.apache.tools.ant.filters.ReplaceTokens
+
+ext {
+    placeholder = 'thisShouldBeSetByTheEar'
+}
+
+processResources {
+    with copySpec {
+        from 'src/main/resources'
+        filter(ReplaceTokens, tokens: [replaceMe: placeholder])
+    }
+}

@@ -1,0 +1,5 @@
+rootProject.name = 'multi-project-ear'
+
+include(':ejb-project')
+include(':ear-project1')
+include(':ear-project2')
